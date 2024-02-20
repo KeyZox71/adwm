@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "\ue62a", "\uf268", "\uf0e6", "4", "5", "6" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -68,7 +68,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ControlMask,             XK_l,      spawn,          {.v = ft_lockcmd } },
+	{ MODKEY|ControlMask,           XK_l,      spawn,          {.v = ft_lockcmd } },
 	{ MODKEY|ShiftMask,             XK_j,      spawn,          {.v = browsercmd } },
 	{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = beepercmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
